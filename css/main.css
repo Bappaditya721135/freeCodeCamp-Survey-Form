@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: papayawhip;
+}
+header{
+    text-align: center;
+}
+main{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+form{
+    max-width: 800px;
+    background-color: black;
+    padding: 2.5rem;
+}
