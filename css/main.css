@@ -34,9 +34,27 @@ input:focus-visible,select:focus-visible{
 }
 main{
     color: white;
-    max-width: 720px;
     margin: 0 auto;
 }
+@media(min-width:200px){
+    label{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(min-width:567px){
+    main{
+        max-width: 540px;
+    }
+    label{
+        justify-content: start;
+    }
+}
+@media(min-width:750px){
+    main{
+        max-width: 720px;
+    }
+    }
 form{
     border-radius: 5px;
     background-color: hsla(240, 30%, 15%, 0.8);
@@ -49,10 +67,7 @@ form>div>p{
 #name,#email,#age{
     display: block;
 }
-label{
-    display: flex;
-    margin-bottom: 8px;
-}
+
 input[type="radio"]{
     margin-right: 10px;
 }
@@ -101,4 +116,7 @@ option{
     color: white;
     margin-bottom: 20px;
     border: none;
+}
+#btn:hover{
+    cursor: pointer;
 }
